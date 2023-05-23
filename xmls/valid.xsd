@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="fakulta">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="katedra" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="vedoucí">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="jméno" type="xs:string"/>
+                                        <xs:element name="telefon" type="xs:string" minOccurs="0"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="email" type="xs:string" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="zaměstnanci">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="zaměstnanec" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="jméno" type="xs:string"/>
+                                                    <xs:element name="telefon" type="xs:string" minOccurs="0"/>
+                                                    <xs:element name="email" type="xs:string" minOccurs="0"/>
+                                                    <xs:element name="pozice" minOccurs="0">
+                                                        <xs:complexType>
+                                                            <xs:choice>
+                                                                <xs:element name="lektor" type="xs:string"/>
+                                                                <xs:element name="Lektor" type="xs:string"/>
+                                                                <xs:element name="odborný_asistent" type="xs:string"/>
+                                                                <xs:element name="profesor" type="xs:string"/>
+                                                                <xs:element name="docent" type="xs:string"/>
+                                                                <xs:element name="asistent" type="xs:string"/>
+                                                            </xs:choice>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="předměty">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="předmět" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="název" type="xs:string"/>
+                                                    <xs:element name="popis" type="xs:string"/>
+                                                </xs:sequence>
+                                                <xs:attribute name="zkratka" type="xs:string"/>
+                                                <xs:attribute name="typ" type="xs:string" use="optional"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="zkratka_katedry" type="xs:string"/>
+                        <xs:attribute name="webové_stránky" type="xs:string" use="optional"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="děkan" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fakulta děkan="varady">
+    <katedra zkratka_katedry="ki" webové_stránky="https://ki.ujep.cz">
+        <vedoucí>
+            <jméno>Jiří Škvor</jméno>
+            <telefon>+420 123 456 789</telefon>
+        </vedoucí>
+        <zaměstnanci>
+            <zaměstnanec>
+                <jméno>Honza Novotný</jméno>
+                <telefon>+420 123 456 789</telefon>
+                <email>novotnak@ujep.cz</email>
+                <pozice>
+                    <lektor/>
+                </pozice>
+            </zaměstnanec>
+            <zaměstnanec>
+                <jméno>Pepa Frantovský</jméno>
+            </zaměstnanec>
+            <zaměstnanec>
+                <jméno>Jana Nováková</jméno>
+                <telefon>+420 123 456 789</telefon>
+                <email>xnovakys@ujep.cz</email>
+                <pozice>
+                    <odborný_asistent/>
+                </pozice>
+            </zaměstnanec>
+        </zaměstnanci>
+        <předměty>
+            <předmět zkratka="apr">
+                <název>Algoritmizace a programování</název>
+                <popis>V tomto předmětu se dozvíte vše o programování.</popis>
+            </předmět>
+            <předmět zkratka="nsql" typ="cvičení">
+                <název>NoSQL databáze</název>
+                <popis>V tomto předmětu se dozvíte vše o nou-eskjůel databázích.</popis>
+            </předmět>
+        </předměty>
+    </katedra>
+</fakulta>

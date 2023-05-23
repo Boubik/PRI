@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fakulta děkan="Varady"><katedra zkratka_katedry="MAT" webové_stránky="https://ki.ujep.cz"><vedoucí><jméno>Jiří Škvor</jméno><telefon>+420 123 456 789</telefon></vedoucí><zaměstnanci><zaměstnanec><jméno>Pavel Beránek</jméno><email>beranek@ujep.cz</email><pozice><Lektor/></pozice></zaměstnanec></zaměstnanci><předměty><předmět zkratka="PGR1" typ="cvičení"><název>Programování 1</název><popis>V tomto předmětu se dozvíte vše o programování.</popis></předmět></předměty></katedra></fakulta>

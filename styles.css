@@ -1,0 +1,127 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #131516;
+    color: #d8d4cf;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .nav-pills {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-item {
+    margin-right: 10px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #d8d4cf;
+    padding: 8px 16px;
+    border-radius: 4px;
+  }
+  
+  .nav-link:hover {
+    background-color: #f1f1f1;
+    color: #333;
+  }
+  
+  .nav-link.active {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    background-color: #131516;
+  }
+  
+  section {
+    margin: 20px 0;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  a {
+    color: #d8d4cf;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  textarea {
+    height: 150px;
+    resize: none;
+  }
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  section{
+    text-align: center;
+  }
+  table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .end-dialog{
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .end-dialog a{
+    color: black;
+  }
+
+  #success{
+    background-color: #4CAF50;
+  }
+
+  #fail{
+    background-color: red;
+  }
